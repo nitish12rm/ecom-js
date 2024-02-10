@@ -25,7 +25,7 @@ const productController = {
     fetchproductById: async function(req,res){
         try
         {
-            const id = req.params.id;
+            const id = req.params.user;
             console.log(id);
             const products = await ProductModel.findById(id);
             console.log(products);

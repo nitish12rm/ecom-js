@@ -34,3 +34,9 @@ app.use("/api/category", CategoryRoutes);
 //product routes
 const productRoute = require('./routes/product_routes');
 app.use("/api/product",productRoute);
+//cart route
+const cartRoute = require('./routes/cart_routes');
+app.use('/api/cart',cartRoute);
+//order route
+const orderRoute = require('./routes/order_routes');
+app.use('/api/order',orderRoute);
